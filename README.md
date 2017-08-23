@@ -46,11 +46,11 @@ arrancar servidor.
 ## Contenido
 
 ### Introducción
-1. [Incluir A-Frame]
-2. [Creando escena](https://github.com/manup15/A-Frame-Now/blob/master/docs/02%20-%20creando%20escena.md)
-3. [Componentes](https://github.com/manup15/A-Frame-Now/blob/master/docs/03%20-%20agregando%20interaccion.md)
-4. [Primitivas](https://github.com/manup15/A-Frame-Now/blob/master/docs/03%20-%20agregando%20interaccion.md)
-5. [Escena 360](https://github.com/manup15/A-Frame-Now/blob/master/docs/03%20-%20agregando%20interaccion.md)
+1. [Incluir A-Frame](https://github.com/manup15/A-Frame-Now/blob/master/docs/01%20-%20Incluir%20A-frame.md)
+2. [Creando escena](https://github.com/manup15/A-Frame-Now/blob/master/docs/02%20-%20Escena.md)
+3. [Componentes](https://github.com/manup15/A-Frame-Now/blob/master/docs/03%20-%20Componentes.md)
+4. [Primitivas](https://github.com/manup15/A-Frame-Now/blob/master/docs/04%20-%20Primitivas.md)
+5. [Escena 360]
 
 ### Crear nuestra primer Aplicación
 
