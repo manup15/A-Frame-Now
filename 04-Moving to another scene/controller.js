@@ -5,7 +5,7 @@ var teleport1 = document.getElementById("toScene2")
 
 teleport1.addEventListener('click', function () {
 
-  console.log("click on teleport!")
+
   var element = document.getElementById("image-360");
   element.setAttribute("opacity", "0")
   element = document.getElementById("image-360-2");
@@ -22,8 +22,7 @@ teleport1.addEventListener('click', function () {
   element.setAttribute("opacity", "0")
   element = document.getElementById("text")
   element.setAttribute("opacity", "0")
-  element = document.getElementById("toVideo")
-  element.setAttribute("opacity", "1")
+
 
 })
 
@@ -52,6 +51,5 @@ teleport2.addEventListener('click', function () {
   element.setAttribute("opacity", "1")
   element = document.getElementById("text")
   element.setAttribute("opacity", "1")
-  element = document.getElementById("toVideo")
-  element.setAttribute("opacity", "0")
+
 });
