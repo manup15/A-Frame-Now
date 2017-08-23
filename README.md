@@ -12,7 +12,7 @@ Además, vamos a construir tu primera web inmersiva.
 
 ## Presentación
 
-Podes ver la presentación en el siguiente [link](linkpresentacion.com)
+Podés ver la presentación en el siguiente [link](linkpresentacion.com)
 
 ## Requisitos
 1. Computadora con navegador Firefox o Chrome.
@@ -36,24 +36,20 @@ Esto va a levantar un servidor y va a abrir una ventana del navegador con la pag
 
 ### Contenido
 
+#### Introducción
+
 1. [A-Frame y WebVR](#aframe-webvr)
 2. [Empezando](#empezando)
 3. [Creando nuestra escena](#nuestra-escena)
 4. [Agregando interaccion](#interaccion)
 
-## Donde ir a partir de aqui
-Para conocer mas sobre este framework no dejes de visitar el sitio web de [A-Frame](https://www.aframe.io)
-
-
-
-## A-Frame y WebVR {#aframe-webvr}
-
-Presentacion de A-Frame y WebVR
-
-
-## Crear nuestra primer Aplicación
+#### Crear nuestra primer Aplicación
 
 1. [Comenzando](https://github.com/manup15/A-Frame-Now/tree/master/01-Getting%20Started)
 2. [Agregando primitivas](https://github.com/manup15/A-Frame-Now/tree/master/02-Adding%20Primitives)
 3. [Agregando animaciones](https://github.com/manup15/A-Frame-Now/tree/master/03-Adding%20Animations)
 4. [Moviendonos hacia otra escena](https://github.com/manup15/A-Frame-Now/tree/master/04-Moving%20to%20another%20scene)
+
+
+## Más información
+Para conocer mas sobre este framework no dejes de visitar el sitio web de [A-Frame](https://www.aframe.io)
