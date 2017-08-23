@@ -23,7 +23,7 @@ Podés ver la presentación en el siguiente [link](linkpresentacion.com)
 
 ### Instalación
 
-Usando `http-server`
+* Usando `http-server`
 
 [http-server](https://www.npmjs.com/package/http-server)
 ```bash
@@ -32,9 +32,9 @@ cd folder
 http-server
 ```
 
-Usando `servidor web`
+* Usando `servidor web`
 
-[xamp](https://www.apachefriends.org/es/index.html)
+Ej: [xamp](https://www.apachefriends.org/es/index.html)
 
 ```bash
 instalar xamp o equivalente.
@@ -59,6 +59,6 @@ arrancar servidor.
 3. [Agregando animaciones](https://github.com/manup15/A-Frame-Now/tree/master/03-Adding%20Animations)
 4. [Moviendonos hacia otra escena](https://github.com/manup15/A-Frame-Now/tree/master/04-Moving%20to%20another%20scene)
 
-
+<br/>
 ## Más información
 Para conocer mas sobre este framework no dejes de visitar el sitio web de [A-Frame](https://www.aframe.io)
