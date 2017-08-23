@@ -1,4 +1,4 @@
-## Empezando {#empezando}
+## Empezando
 
 Vamos a empezar declarando nuestra escena, que es el objeto raiz donde se colocaran todas las entidades de la experiencia. La representamos mediante el elemento <a-scene>
 
