@@ -59,6 +59,6 @@ arrancar servidor.
 3. [Agregando animaciones](https://github.com/manup15/A-Frame-Now/tree/master/03-Adding%20Animations)
 4. [Moviendonos hacia otra escena](https://github.com/manup15/A-Frame-Now/tree/master/04-Moving%20to%20another%20scene)
 
-<br/>
+
 ## Más información
 Para conocer mas sobre este framework no dejes de visitar el sitio web de [A-Frame](https://www.aframe.io)
