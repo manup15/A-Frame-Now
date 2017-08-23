@@ -47,10 +47,9 @@ arrancar servidor.
 
 ### Introducción
 
-1. [A-Frame y WebVR](#aframe-webvr)
-2. [Empezando](#empezando)
-3. [Creando nuestra escena](#nuestra-escena)
-4. [Agregando interaccion](#interaccion)
+1. [Comenzando](https://github.com/manup15/A-Frame-Now/blob/master/docs/01%20-%20comenzando.md)
+2. [Creando escena](https://github.com/manup15/A-Frame-Now/blob/master/docs/02%20-%20creando%20escena.md)
+3. [Agregando interaccion](https://github.com/manup15/A-Frame-Now/blob/master/docs/03%20-%20agregando%20interaccion.md)
 
 ### Crear nuestra primer Aplicación
 
