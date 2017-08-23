@@ -23,16 +23,25 @@ Podés ver la presentación en el siguiente [link](linkpresentacion.com)
 
 ### Instalación
 
-Usando `npm`
+Usando `http-server`
 
+[http-server](https://www.npmjs.com/package/http-server)
 ```bash
-git clone git@github.com:repo/workshop-project.git
+git clone git@github.com:manup15/A-Frame-Now.git
 cd folder
-npm install
-npm start
+http-server
 ```
 
-Esto va a levantar un servidor y va a abrir una ventana del navegador con la pagina inicial.
+Usando `servidor web`
+
+[xamp](https://www.apachefriends.org/es/index.html)
+
+```bash
+instalar xamp o equivalente.
+descargar repositorio .
+pegar repositorio dentro de htdocs (carpeta dentro del directorio de xamp)
+arrancar servidor.
+```
 
 ## Contenido
 
