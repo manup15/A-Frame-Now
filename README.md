@@ -34,16 +34,16 @@ npm start
 
 Esto va a levantar un servidor y va a abrir una ventana del navegador con la pagina inicial.
 
-### Contenido
+## Contenido
 
-#### Introducción
+### Introducción
 
 1. [A-Frame y WebVR](#aframe-webvr)
 2. [Empezando](#empezando)
 3. [Creando nuestra escena](#nuestra-escena)
 4. [Agregando interaccion](#interaccion)
 
-#### Crear nuestra primer Aplicación
+### Crear nuestra primer Aplicación
 
 1. [Comenzando](https://github.com/manup15/A-Frame-Now/tree/master/01-Getting%20Started)
 2. [Agregando primitivas](https://github.com/manup15/A-Frame-Now/tree/master/02-Adding%20Primitives)
