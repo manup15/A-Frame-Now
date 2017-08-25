@@ -1,4 +1,4 @@
-##Primitivas
+## Primitivas
 
 Las primitivas son los "objetos" que se pueden poner en la escena. Existe una gran variedad de éstas definidas por A-Frame como cajas, conos, cilindros, planos,imagenes, textos, etc. Aqúi se mencionan las más comunes de utilizar.
 
