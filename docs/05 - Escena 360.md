@@ -33,9 +33,6 @@ Entre sus atributos mas importantes se encuentran:
   <a-assets>
     <video id="antarctica" autoplay loop="true" src="antarctica.mp4">
   </a-assets>
-  <!-- Using the asset management system. -->
   <a-videosphere src="#antarctica"></a-videosphere>
-  <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-  <a-videosphere src="africa.mp4"></a-videosphere>
 </a-scene>
 ```
