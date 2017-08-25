@@ -53,14 +53,23 @@ arrancar servidor.
 5. [Escena 360]
 
 ### Crear nuestra primer Aplicación
+Vamos a crear una experiencia para ir de una escena a otra. 
+Parecido a lo de miradas360.
 
 1. [Comenzando](https://github.com/manup15/A-Frame-Now/tree/master/01-Getting%20Started)
 2. [Agregando primitivas](https://github.com/manup15/A-Frame-Now/tree/master/02-Adding%20Primitives)
 3. [Agregando animaciones](https://github.com/manup15/A-Frame-Now/tree/master/03-Adding%20Animations)
 4. [Moviendonos hacia otra escena](https://github.com/manup15/A-Frame-Now/tree/master/04-Moving%20to%20another%20scene)
+4. Obj
+5. [Sonido]
+6. [Texto y Movimiento]
+7. [Threejs Interfaz]
 
 
-
+## Hecho con amor por
+### Manu Paiva
+### Adriel Zárate
+### Martin Rabaglia
 
 
 ## Más información
