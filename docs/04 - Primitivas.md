@@ -1,4 +1,6 @@
 ##Primitivas
+Las primitivas son los "objetos" que se pueden poner en la escena. Existe una gran variedad de éstas definidas por A-Frame como cajas, conos, cilindros, planos,imagenes, textos, etc. Aqúi se mencionan las más comunes de utilizar.
+
 
 #### Cámara
 La cámara define la perspectiva desde la cual el usuario ve la escena.
@@ -15,6 +17,19 @@ Agregamos a continuación una cámara a la escena. Ésta tendrá como nodo hijo 
   <a-camera>
     <a-cursor id="cursor"></a-cursor>
   </a-camera>
+</a-scene>
+```
+
+
+#### Imagen
+Se puede agregar una imágen sobre una entidad colocando la ruta de la imagen dentro de los assets y luego asignandosela a la primitiva < a-image>. Entre sus atributos más comunes se encuentra el ancho y el alto de la imagen
+
+```
+<a-scene>
+  <a-assets>
+    <img id="my-image" src="image.png">
+  </a-assets>
+  <a-image src="#my-image" width="200" height="100"></a-image>
 </a-scene>
 ```
 
