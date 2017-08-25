@@ -42,7 +42,8 @@ Esto va a levantar un servidor y va a abrir una ventana del navegador con la pag
 6. [Sonido]
 7. [Galeria 360]
 8. [Miradas Proto]
-
+9. [ThreeJs Interface]
+10. [Aframe Component]
 
 
 ## Donde ir a partir de aqui
