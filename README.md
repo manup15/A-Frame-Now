@@ -39,6 +39,11 @@ Esto va a levantar un servidor y va a abrir una ventana del navegador con la pag
 3. [Empezando](#empezando)
 4. [Creando nuestra escena](#nuestra-escena)
 5. [Agregando interaccion](#interaccion)
+6. [Sonido]
+7. [Galeria 360]
+8. [Miradas Proto]
+
+
 
 ## Donde ir a partir de aqui
 Para conocer mas sobre este framework no dejes de visitar el sitio web de [A-Frame](https://www.aframe.io)
@@ -54,85 +59,6 @@ Presentacion de A-Frame y WebVR
 
 La idea en esta pagina es hablar sobre el proyecto de Miradas 360
 
-
-## Empezando {#empezando}
-
-Vamos a empezar declarando nuestra escena, que es el objeto raiz donde se colocaran todas las entidades de la experiencia. La representamos mediante el elemento <a-scene>
-
-```
-<a-scene></a-scene>
-```
-
-Agregamos una primiiva, en este caso, una caja.
-
-```
-<a-scene>
-    <a-box></a-box>
-</a-scene>
-```
-
-Si vamos ahora mismo a ver el resultado en el navegador, no vamos a ver nada. La escena y la caja estan renderizadas, pero aun no tienen ninguna propiedad que haga visibles estos elementos. Agregamos entonces alguns artibutos a la caja: posicion, rotacion y color. Agregamos tambien un cielo con color. El cielo se representa con el elemento <a-sky>
-
-```
-<a-scene>
-
-    <a-box
-        position="-1 0.5 -3"
-        rotation="0 45 0"
-        color="red"
-    ></a-box>
-
-    <a-sky
-        color="blue"
-    ></a-sky>
-
-</a-scene>
-```
-
-Perfecto. Ahora ya podemos ver una caja roja bajo un cielo azul. Otra primitivas son la esfera, o <a-sphere>, la camara y el cursor.
-Como el cursor representa el centro de nuestra vision, necesitamos adjuntarlo a la camara. Pero en A-Frame la camara viene agregada por defecto (no se necesitamos agregar un elemento "camara" a nuestro html para ver nuestra experiencia en el navegador). Para unir el cursor a la camara agregamos amos elementos uno dentro del otro.
-
-```
-<a-scene>
-    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" material="src: pen/imagen/madera.jpg;"></a-box>
-    <a-sky color="#cafefc" material="src: pen/imagen/nubes.png;"></a-sky>
-    <a-sphere
-        position="0 1.25 -5"
-        radius="1.25"
-        color="#EF2D5E"
-    ></a-sphere>
-    <a-camera>
-        <a-cursor id="cursor"></a-cursor>
-    </a-camera>
-</a-scene>
-```
-
-## Creando nuestra escena {#nuestra-escena}
-
-Vamos a crear nuestra primera experencia inmersiva con una imagen de 360.
-En el documento que veniamos trabajando, borramos la caja y el cielo del HTML. Cambiamos la propiedad de radio de la esfera para hacerla gigante, y la movemos de manera que la camara quede dentro.
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" color="#EF2D5E"></a-sphere>
-    <a-camera>
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-</a-scene>
-```
-
-Pero a pesar dentro de la esfera, podemos ver a traves de la misma, en lugar de ver su interior. Eso es porque nos falto agregar el atributo side "double", que refleja la misma textura que tiene una primitiva tanto dentro como fuera de la misma.
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" material="src: pen/imagen/paisaje-360.jpg;" side="double"></a-sphere>
-    <a-camera>
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-</a-scene>
-```
-
-El atributo material nos permite colocar propiedades relacionadas a la textura que le aplicamos a nuestros elementos. En el ejemplo agregamos la imagen de un paisaje 360.
 
 
 ## Agregando interaccion {#interaccion}
