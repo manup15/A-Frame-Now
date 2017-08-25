@@ -7,7 +7,7 @@ Una escena está representada por el elemento <a-scene>. La escena es el objeto 
 <a-scene></a-scene>
 ```
 
-Dentro del elemento <a-assets> se colocan todos los assets (imagenes, sonido, videos, etc).
+Dentro del elemento < a-assets> se colocan todos los assets (imagenes, sonido, videos, etc).
 
 ```
 <a-scene>
