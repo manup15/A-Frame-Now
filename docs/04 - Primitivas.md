@@ -1,8 +1,10 @@
 ##Primitivas
+
 Las primitivas son los "objetos" que se pueden poner en la escena. Existe una gran variedad de éstas definidas por A-Frame como cajas, conos, cilindros, planos,imagenes, textos, etc. Aqúi se mencionan las más comunes de utilizar.
 
 
 #### Cámara
+
 La cámara define la perspectiva desde la cual el usuario ve la escena.
 > Cuando no está en modo VR, userHeight (altura de usuario) eleva la cámara hasta la altura promedio aproximada del nivel del ojo humano, 1,6 (metros). Al introducir el modo VR, este desplazamiento de altura se elimina de tal manera que usamos la posición absoluta devuelta desde el casco VR. La compensación es conveniente para las experiencias que trabajan tanto dentro como fuera de VR.
 
@@ -22,6 +24,7 @@ Agregamos a continuación una cámara a la escena. Ésta tendrá como nodo hijo 
 
 
 #### Imagen
+
 Se puede agregar una imágen sobre una entidad colocando la ruta de la imagen dentro de los assets y luego asignandosela a la primitiva < a-image>. Entre sus atributos más comunes se encuentra el ancho y el alto de la imagen
 
 ```
@@ -34,6 +37,7 @@ Se puede agregar una imágen sobre una entidad colocando la ruta de la imagen de
 ```
 
 #### Texto
+
 Entre sus propiedades prinicipales se encuentran:
 * align (left,center,right).
 * color.
@@ -47,6 +51,7 @@ El texto no se renderiza al igual que en un sitio web 2D, por lo tanto las fuent
 <a-entity text="value: Hello World;"></a-entity>
 ```
 #### Iluminación
+
 Componente de luz define la entidad como una fuente de luz. La luz afecta a todos los materiales que no han especificado un modelo de sombreado plano con sombreado: plano.
 Hay que tener en cuenta que las luces son computacionalmente caras y es importante limitar el número de luces en la escena.
 
