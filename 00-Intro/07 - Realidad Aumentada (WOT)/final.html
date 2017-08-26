@@ -10,7 +10,19 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene  artoolkit='sourceType: webcam;'>
-        <a-box position='0 0 0.5' material='opacity: 0.5;'></a-box>
+    <a-assets>
+            <a-asset-item id="ducky-obj" src="/objects/ducky.obj"></a-asset-item>
+    </a-assets>
+	    <a-obj-model
+	      src="#ducky-obj"
+	      position='0 0 0.5' 
+	      rotation="-210 -120 180"
+	      scale="0.01 0.01 0.01"
+	      material="color: orange">
+	    </a-obj-model>
+		<a-sphere position="0 0.5 0" radius="0.5" color="#EF2D5E"></a-sphere>
+		<a-plane position="0 0 0" rotation="-90 0 0" width="1" height="1" color="#7BC8A4"></a-plane>
+
         <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
 </body>

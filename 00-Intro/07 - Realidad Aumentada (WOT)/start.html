@@ -9,9 +9,11 @@
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
 </head>
 
-<body>
-    
-
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene  artoolkit='sourceType: webcam;'>
+        <a-box position='0 0 0.5' material='opacity: 0.8;'></a-box>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
 </body>
 
 </html>
