@@ -46,182 +46,22 @@ arrancar servidor.
 ## Contenido
 
 ### Introducción
-1. [Incluir A-Frame](https://github.com/manup15/A-Frame-Now/blob/master/docs/01%20-%20Incluir%20A-frame.md)
-2. [Creando escena](https://github.com/manup15/A-Frame-Now/blob/master/docs/02%20-%20Escena.md)
-3. [Componentes](https://github.com/manup15/A-Frame-Now/blob/master/docs/03%20-%20Componentes.md)
-4. [Primitivas](https://github.com/manup15/A-Frame-Now/blob/master/docs/04%20-%20Primitivas.md)
-5. [Escena 360]
+    
+    01 - Incluir A-frame
+    02 - Escena
+    03 - Primitivas
+    04 - Atributos
+    05 - Escena 360
+    06 - Interacciones & JS
+    07 - Audios
+    08 - Objetos 3d
+    09 - Realidad Aumentada (WOT)
 
-### Crear nuestra primer Aplicación
-Vamos a crear una experiencia para ir de una escena a otra. 
-Parecido a lo de miradas360.
+### Ejercicios.
 
-1. [Comenzando](https://github.com/manup15/A-Frame-Now/tree/master/01-Getting%20Started)
-2. [Agregando primitivas](https://github.com/manup15/A-Frame-Now/tree/master/02-Adding%20Primitives)
-3. [Agregando animaciones](https://github.com/manup15/A-Frame-Now/tree/master/03-Adding%20Animations)
-4. [Moviendonos hacia otra escena](https://github.com/manup15/A-Frame-Now/tree/master/04-Moving%20to%20another%20scene)
-4. [Obj]
-5. [Sonido]
-6. [Texto y Movimiento]
-7. [Threejs Interfaz]
-
-
-## Hecho con amor por
-### Manu Paiva
-### Adriel Zárate
-### Martin Rabaglia
-
-
-## Más información
-Para conocer mas sobre este framework no dejes de visitar el sitio web de [A-Frame](https://www.aframe.io)
-
-
-Esto va a levantar un servidor y va a abrir una ventana del navegador con la pagina inicial.
-
-### Contenido
-
-1. [A-Frame y WebVR](#aframe-webvr)
-2. [Acerca de Miradas 360](#miradas360)
-3. [Empezando](#empezando)
-4. [Creando nuestra escena](#nuestra-escena)
-5. [Agregando interaccion](#interaccion)
-
-## A-Frame y WebVR {#aframe-webvr}
-
-Presentacion de A-Frame y WebVR
-
-
-## Sobre Miradas 360 {#miradas360}
-
-La idea en esta pagina es hablar sobre el proyecto de Miradas 360
-
-
-## Creando nuestra escena {#nuestra-escena}
-
-Vamos a crear nuestra primera experencia inmersiva con una imagen de 360.
-En el documento que veniamos trabajando, borramos la caja y el cielo del HTML. Cambiamos la propiedad de radio de la esfera para hacerla gigante, y la movemos de manera que la camara quede dentro.
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" color="#EF2D5E"></a-sphere>
-    <a-camera>
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-</a-scene>
-```
-
-Pero a pesar dentro de la esfera, podemos ver a traves de la misma, en lugar de ver su interior. Eso es porque nos falto agregar el atributo side "double", que refleja la misma textura que tiene una primitiva tanto dentro como fuera de la misma.
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" material="src: pen/imagen/paisaje-360.jpg;" side="double"></a-sphere>
-    <a-camera>
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-</a-scene>
-```
-
-El atributo material nos permite colocar propiedades relacionadas a la textura que le aplicamos a nuestros elementos. En el ejemplo agregamos la imagen de un paisaje 360.
-
-
-## Agregando interaccion {#interaccion}
-
-Nuestro objetivo aqui es agregar un par de botones a la experiencia. haciendo click en uno u otro cambiaremos la imagen de la esfera en la que estamos inmersos.
-
-Comenzamos agregando un plano con algunos atributos. El plano funcionara como boton.
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" material="src: pen/imagen/paisaje-360.jpg;" side="double"></a-sphere>
-    <a-plane
-        position="0 2 -3"
-        rotation="0 0 0"
-        width="1"
-        height="1"
-        material="src: pen/imagen/boton-1.jpg";
-    ></a-plane>
-    <a-camera>
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-</a-scene>
-```
-
-```
-En la camara agregamos el atributo wasd-controls-enabled en false. Con esto restringimos la experiencia a permanecer siempre en el mismo lugar, bloqueando las funciones de desplazamiento con el teclado en las teclas W,A,S y D.
-
-La animacion de rotacion en el plano no vamos a necesitarla por ahora, asi es que la removemos, y agregamos un script para cambiar la imagen de la esfera cuando el usuario hace click con el cursor apuntando al plano.
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" material="src: pen/imagen/paisaje-360.jpg;" side="double"></a-sphere>
-    <a-plane position="0 2 -3" rotation="0 0 0" width="1" height="1" material="src: pen/imagen/boton-1.jpg"; side="double">
-        <a-animation attribute="position" dur="1000" to="0 2.2 -3" direction="alternate-reverse" repeat="indefinite" ></a-animation>
-    </a-plane>
-    <a-camera>
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-</a-scene>
-<script>
-    document.querySelector('a-plane').addEventListener('click', function (evt) {
-        document.querySelector('a-sphere').setAttribute("material", "src: pen/imagen/ciudad-360.jpg;");
-    });
-</script>
-```
-
-Agregamos otro plano. Este funcionara como segundo boton para devolvernos a la imagen inicial. La idea aqui es que tengamos dos planos en la escena, uno visible y el otro oculto. Cuando cliqueamos el visible, la imagen de la esfera cambia. EL plano visible se mueve a una posicion mas lejana saliendo de nuestro campo de vision. El plano oculto se hace visible.
-
-
-```
-<a-scene>
-    <a-sphere position="0 2 0" radius="5" material="src: pen/imagen/paisaje-360.jpg;" side="double"></a-sphere>
-
-    <a-plane id="boton-1" position="0 2 -3" rotation="0 0 0" width="1" height="1" material="src: pen/imagen/boton-1.jpg"; side="double"></a-plane>
-
-    <a-plane id="boton-2" position="2 100 -3" rotation="0 0 0" width="1" height="1" material="src: pen/imagen/boton-2.jpg"; side="double"></a-plane>
-
-    <a-camera wasd-controls-enabled="false">
-    <a-cursor id="cursor"></a-cursor>
-  </a-camera>
-
-</a-scene>
-<script>
-    document.querySelector('#boton-1').addEventListener('click', function() {
-        this.setAttribute("position", "0 100 -3");
-        document.querySelector('#boton-2').setAttribute("position", "2 2 -3");
-        document.querySelector('a-sphere').setAttribute("material", "src: pen/imagen/ciudad-360.jpg;");
-    });
-    document.querySelector('#boton-2').addEventListener('click', function() {
-        this.setAttribute("position", "2 100 -3");
-        document.querySelector('a-sphere').setAttribute("material", "src: pen/imagen/cubos-360.jpg;");
-    });
-</script>
-```
-
-Aunque seria mas comodo si ambos estuviesen en el mismo lugar al clickearse. Lo que haremos entonces sera modificar la posicion inicial de ambos planos para intercalarlos.
-
-```
-<a-scene>
-
-    <a-sphere position="0 2 0" radius="5" material="src: pen/imagen/paisaje-360.jpg;" side="double"></a-sphere>
-
-    <a-plane id="boton-1" position="0 2 -3" rotation="0 0 0" width="1" height="1" material="src: pen/imagen/boton-1.jpg"; side="double"></a-plane>
-
-    <a-plane id="boton-2" position="0 100 -3" rotation="0 0 0" width="1" height="1" material="src: pen/imagen/boton-2.jpg"; side="double"></a-plane>
-
-    <a-camera wasd-controls-enabled="false">
-        <a-cursor id="cursor"></a-cursor>
-    </a-camera>
-
-</a-scene>
-<script>
-    document.querySelector('#boton-1').addEventListener('click', function() {
-        this.setAttribute("position", "0 100 -3");
-        document.querySelector('#boton-2').setAttribute("position", "0 2 -3");
-        document.querySelector('a-sphere').setAttribute("material", "src: pen/imagen/ciudad-360.jpg;");
-    });
-    document.querySelector('#boton-2').addEventListener('click', function() {
-        this.setAttribute("position", "0 100 -3");
-        document.querySelector('a-sphere').setAttribute("material", "src: pen/imagen/cubos-360.jpg;");
-    });
-</script>
-```
+    01 - Teleport JS
+    02 - Teleport Aframe
+    04 - Miradas 360
+    05 - Titulos Miradas
+    06 - Raton y Pato
+    07 - Galeria
