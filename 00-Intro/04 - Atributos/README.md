@@ -1,3 +1,7 @@
+#Atributos
+
+Como todas las entidades de AFRAME son elementos HTML, vamos a manejarnos mucho atraves de atributos html de cada una para manejarnos y alterarlas.
+
 Si vamos ahora mismo a ver el resultado en el navegador, no vamos a ver nada. La escena y la caja estan renderizadas, pero aun no tienen ninguna propiedad que haga visibles estos elementos. Agregamos entonces alguns artibutos a la caja: posicion, rotacion y color. Agregamos tambien un cielo con color. El cielo se representa con el elemento <a-sky>
 
 ```

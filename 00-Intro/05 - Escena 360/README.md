@@ -7,18 +7,14 @@ También se puede lograr el mismo efecto utilizando <a-sphere></a-sphere> en lug
 
 ```
 <a-scene>
-
   <a-assets>
     <img id="imagen-cielo" src="/images/image.jpeg">
   </a-assets>
-
   <a-sky id="image-360" radius="10" src="#imagen-cielo"></a-sky>
-
   <a-camera wasd-controls-enabled="true">
     <a-cursor id="cursor">
     </a-cursor>
   </a-camera>
-
 </a-scene>
 ```
 ideosphere primitive plays 360° videos in the background of the scene. Videospheres are a large sphere with the video texture mapped to the inside.
