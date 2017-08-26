@@ -1,4 +1,4 @@
-## Realidad Aumentada WOOOOT?
+## Objetos 3d
 
 Este tutorial es una adaptación de 
 https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
