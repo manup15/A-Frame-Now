@@ -15,4 +15,4 @@ Arranquemos!
 
 <img src="https://media.giphy.com/media/l1J9qVUUzQV3LTRcI/giphy.gif">
 
-<img src="https://media.giphy.com/media/l1J9ySdWv7XDdW9qM/giphy.gif">
+<img src="https://media.giphy.com/media/3oKGzhQ5LTPAnFUARG/giphy.gif">

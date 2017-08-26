@@ -1,6 +1,6 @@
 ## Raton AR
 
-<img src="https://media.giphy.com/media/l1J9ySdWv7XDdW9qM/giphy.gif">
+<img src="https://media.giphy.com/media/3oKGzhQ5LTPAnFUARG/giphy.gif">
 
 
 El objetivo es armar con ARJS / Aframe un escenario en el cual vos puedas hacer hacer correr al ratón alrededor tuyo.
