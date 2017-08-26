@@ -8,3 +8,8 @@ Vos vas a elegir como implementarlas.
 Todas son de igual complejidad, por lo que podes empezar por la que quieras.
 
 Arranquemos!
+
+<img src="https://media.giphy.com/media/3oKGztz0csa94kvf32/giphy.gif">
+<img src="https://media.giphy.com/media/l1J9v0qOUwolh1Ig8/giphy.gif">
+<img src="https://media.giphy.com/media/l1J9qVUUzQV3LTRcI/giphy.gif">
+<img src="https://media.giphy.com/media/l1J9ySdWv7XDdW9qM/giphy.gif">
