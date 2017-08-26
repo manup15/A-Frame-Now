@@ -12,7 +12,7 @@ Además, vamos a construir tu primera web inmersiva.
 
 ## Presentación
 
-Podés ver la presentación en el siguiente [link](linkpresentacion.com)
+Podés ver la presentación en el siguiente [link](https://docs.google.com/presentation/d/192i4LUN6XoGVGryFdnWHuh8G9w4CBXqkStRSVpV7few/edit#slide=id.g117614edec_0_101)
 
 ## Requisitos
 1. Computadora con navegador Firefox o Chrome.
