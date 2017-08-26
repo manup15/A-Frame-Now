@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>A-Frame Workshop</title>
+
+    <!-- include A-Frame! -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+      <a-assets>
+        <img id="texture" src="/images/texture.jpg">
+        <img id="my-image" src="/images/curved-image.jpg">
+      </a-assets>
+      <a-entity position="-1 3 -2"
+        geometry="primitive: plane; width: 4; height: auto"
+      material="color: blue"
+      text="value: Hello!">
+    </a-entity>
+      <a-box src="#texture"  position="0 1 -2"></a-box>
+       <a-image src="#my-image" position="5 1 -2" width="4" height="3"></a-image>
+      
+
+       
+      <a-camera>
+        <a-cursor id="cursor"></a-cursor>
+      </a-camera>
+    </a-scene>
+</body>
+
+</html>

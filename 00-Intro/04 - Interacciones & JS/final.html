@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>A-Frame Workshop</title>
+
+    <!-- include A-Frame! -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+</head>
+
+<body>
+   
+        
+   <a-scene>
+
+    <a-sphere position="0 2 0" radius="5" material="src:  /images/venecia/image.jpeg;" side="double"></a-sphere>
+
+    <a-plane id="boton-1" position="0 2 -3" transparent="true" rotation="0 0 0" width="1" height="1" material="src: /images/teleport.png"; side="double"><a-animation
+            attribute="rotation"
+            dur="1000"
+            to="0 360 0"
+            direction="alternate-reverse"
+            repeat="indefinite"
+        ></a-animation></a-plane>
+
+     <a-plane id="boton-2" position="0 100 -3" transparent="true" rotation="0 0 0" width="1" height="1" material="src: /images/teleport.png"; side="double"><a-animation
+            attribute="rotation"
+            dur="1000"
+            to="0 360 0"
+            direction="alternate-reverse"
+            repeat="indefinite"
+        ></a-animation></a-plane>
+
+    <a-camera wasd-controls-enabled="false">
+        <a-cursor id="cursor"></a-cursor>
+    </a-camera>
+
+</a-scene>
+<script>
+    document.querySelector('#boton-1').addEventListener('click', function() {
+        this.setAttribute("position", "0 100 -3");
+        document.querySelector('#boton-2').setAttribute("position", "0 2 -3");
+        document.querySelector('a-sphere').setAttribute("material", "src: /images/venecia/image.jpeg;");
+    });
+    document.querySelector('#boton-2').addEventListener('click', function() {
+        this.setAttribute("position", "0 100 -3");
+        document.querySelector('a-sphere').setAttribute("material", "src: /images/venecia/image2.jpg");
+    });
+</script>
+
+
+</body>
+
+</html>
