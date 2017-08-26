@@ -11,5 +11,12 @@ La idea es que puedan replicar algun formato de miradas con
 - Musica de fondo
 - Voz de Fondo para cada escena
 
-Para eso pusimos en la carpetas el material
+Para eso pusimos en la carpetas el material de varias producciones.
+Como
+
+/images/cuba
+/images/borges
+
+Ahi hay buen material para jugar ;)
+
 
