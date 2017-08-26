@@ -1,8 +1,14 @@
-## Raton AR
+## Titulos de Miradas 360.
 
+Los titulos de miradas 360 tienen una particularidad, parece una simulacion de cine, cuando se te va explicando que ocurre.
 
-El objetivo es armar con ARJS / Aframe un escenario en el cual vos puedas hacer hacer correr al ratón alrededor tuyo.
+La idea es que puedan replicar la misma funcionalidad para que se pueda ver.
+Esto significa armar 3 carteles
+- Uno de ponerse auriculares
+- Otro de Girar
+- Uno mas de casco
 
-¿Esto que implica?
-1) Usar la textura del Ratón.
-2) Hacer que haya una animacion que mueva al raton.
+Si lo desean, tambien pueden agregar la introduccion ;)
+
+Pueden usar de ejemplo http://miradas360.com.ar/01-Borges/
+
