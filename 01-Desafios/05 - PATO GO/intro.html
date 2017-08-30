@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello, World! • A-Frame</title>
+  <meta name="description" content="Hello, World! • A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+   <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.17.0/dist/aframe-extras.min.js"></script>
+     <link href="camera.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+
+ 
+   
+</head>
+<body>
+  <a-scene>
+    <a-camera id="miradas-cam" position="1 1 1" wasd-controls-enabled="false">
+        <a-cursor id="cursor"></a-cursor>
+    </a-camera>
+  </a-scene>
+
+
+  <video autoplay="true" id="arVideo"></video>
+
+  <div class="coords">
+  </div>
+
+   <script src="camera.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hello, World! • A-Frame</title>
+  <meta name="description" content="Hello, World! • A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+   <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v1.17.0/dist/aframe-extras.min.js"></script>
+     <link href="camera.css" rel="stylesheet" type="text/css" crossorigin="anonymous">
+
+ 
+   
+</head>
+<body>
+  <a-scene>
+    
+    <a-assets>
+            <a-asset-item id="ducky-obj" src="/objects/ducky.obj"></a-asset-item>
+    </a-assets>
+    
+
+   
+    <a-camera id="miradas-cam" position="0 1.8 500" wasd-controls-enabled="false">
+           <a-cursor id="cursor">
+                <a-animation begin="click" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="150"></a-animation>
+                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" from="1 1 1" to="0.1 0.1 0.1" dur="1500"></a-animation>
+            </a-cursor>
+    </a-camera>
+
+        <a-entity position="0 1.8 500" rotation="90 0 0" geometry="primitive: circle; radius: 3" material="color: transparent">
+          
+           <a-animation attribute="rotation" dur="10000" easing="linear" to="90 0 360" repeat="indefinite"></a-animation>
+               
+       <a-obj-model
+      src="#ducky-obj"
+      position="-10 3 -1" 
+      rotation="-210 -120 180"
+      scale="0.01 0.01 0.01"
+      material="color: orange">
+    
+       <a-animation begin="click" attribute="color" to="blue"></a-animation>
+        <a-animation
+            attribute="rotation"
+            dur="1000"
+            to="360 0 0"
+            repeat="indefinite"
+        ></a-animation>
+        </a-obj-model>
+            </a-entity>
+      
+  </a-scene>
+
+
+  <video autoplay="true" id="arVideo"></video>
+
+  <div class="coords">
+  </div>
+
+   <script src="camera.js"></script>
+
+</body>
+</html>
+

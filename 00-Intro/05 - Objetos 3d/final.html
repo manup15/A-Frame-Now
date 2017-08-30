@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>A-Frame Workshop</title>
+    <!-- include A-Frame! -->
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+    <a-assets>
+            <a-asset-item id="ducky-obj" src="/objects/ducky.obj"></a-asset-item>
+    </a-assets>
+    <a-obj-model
+      src="#ducky-obj"
+      position="1 0 -5"
+      rotation="-210 -120 180"
+      scale="0.01 0.01 0.01"
+      material="color: orange">
+    </a-obj-model>
+   <a-camera wasd-controls-enabled="true">
+        <a-cursor id="cursor"></a-cursor>
+    </a-camera>
+    </a-scene>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+  
+      html, body, #root, #arVideo {
+        background-color:transparent;
+        height: 100vh;
+        width: 100vw;
+        color: #fff;
+        font-size: 1.6em;
+        text-align: center;
+      }
+      #root {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      #arVideo {
+        width: 100%    !important;
+        max-width: 100%    !important;
+        height: auto   !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1000;
+      }
+   
